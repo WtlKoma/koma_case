@@ -109,7 +109,6 @@ public class ClassScaner implements ResourceLoaderAware {
 				}
 			}
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		

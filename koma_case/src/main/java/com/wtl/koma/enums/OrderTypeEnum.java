@@ -1,6 +1,6 @@
 package com.wtl.koma.enums;
 /**
- * <p>Description: </p>
+ * <p>Description: 订单类型枚举类</p>
  * @author WTL
  * @date 2019年8月1日
  */

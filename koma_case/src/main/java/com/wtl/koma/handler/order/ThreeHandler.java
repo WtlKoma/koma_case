@@ -7,7 +7,7 @@ import com.wtl.koma.enums.OrderTypeEnum;
 import com.wtl.koma.handler.AOrderHandler;
 
 /**
- * <p>Description:  </p>
+ * <p>Description:  订单处理类</p>
  * @author WTL
  * @date 2019年8月1日
  */

@@ -38,8 +38,14 @@ public class TestController {
 		return "成功";
 	}
 	
+	/**
+	 * 测试重复提交
+	 * @param userId
+	 * @throws InterruptedException
+	 */
 	@PostMapping("testRS")
 	public void testRepeatedSubmit(Integer userId) throws InterruptedException{
+		//用的Jemeter按照时间模拟用户ID
 		SimpleDateFormat df = new SimpleDateFormat("ss");
 		userId = Integer.valueOf(df.format(new Date()));
 		NormalConstants.ai.incrementAndGet();

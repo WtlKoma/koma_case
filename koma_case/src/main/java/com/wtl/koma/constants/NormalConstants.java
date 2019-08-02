@@ -4,7 +4,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * <p>Description: </p>
+ * <p>Description: 一般常量类</p>
  * @author WTL
  * @date 2019年7月18日
  */

@@ -15,7 +15,7 @@ import com.wtl.koma.handler.HandlerContext;
 import com.wtl.koma.utils.ClassScaner;
 
 /**
- * <p>Description: 处理实体对象</p>
+ * <p>Description: 处理订单处理Class放入HandlerContext中</p>
  * @author WTL
  * @date 2019年7月31日
  */

@@ -23,6 +23,12 @@ public class TestService {
 		throw new MissingParametersException();
 	}
 	
+	/**
+	 * 测试重复提交
+	 * @param userId
+	 * @param mCode
+	 * @throws InterruptedException
+	 */
 	@NoRepeatedSubmit
 	public void testRepeatedSubmit(Integer userId, String mCode) throws InterruptedException{
 		log.info("用户{}在{}机器上开始处理业务。", userId, mCode);

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import lombok.Data;
 
 /**
- * <p>Description: 配置的值</p>
+ * <p>Description: 初始化在配置文件中配置的值</p>
  * @author WTL
  * @date 2019年7月18日
  */

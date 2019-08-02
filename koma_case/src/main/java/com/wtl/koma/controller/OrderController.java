@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.wtl.koma.service.OrderService;
 
 /**
- * <p>Description: </p>
+ * <p>Description: 订单测试类</p>
  * @author WTL
  * @date 2019年8月1日
  */

@@ -1,6 +1,6 @@
 package com.wtl.koma.exception;
 /**
- * <p>Description: 参数缺失</p>
+ * <p>Description: 参数缺失异常类</p>
  * @author WTL
  * @date 2019年5月10日
  */
