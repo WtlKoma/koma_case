@@ -1,0 +1,88 @@
+server:
+  port: 8090
+  tomcat.max-threads: 30
+  tomcat.uri-encoding: UTF-8
+#  servlet:
+#    context-path: /baker
+
+
+
+debug: true
+
+#logging:
+#    level:
+#      root: warn
+#      com.qdp.demo.mapper: trace
+
+
+spring:
+  application:
+    name: baker-tilly
+  redis:
+    database: 1  #数据库索引
+    host: 192.168.1.16  #服务地址
+    port: 6379   #端口
+    password:  #密码
+    timeout: 10000 #连接超时时间
+    jedis:
+      pool:
+        max-active: 100    #最大连接数
+        max-wait: -1     #最大阻塞等待时间(负数表示没限制)
+        max-idle: 8     #最大空闲
+        min-idle: 0     #最小空闲
+  datasource:
+    druid:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://39.106.183.142:3307/baker?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC&allowMultiQueries=true
+      username: root
+      password: koma1993
+      initial-size: 5
+      max-active: 20
+      min-idle: 5
+      max-wait: 2000
+      max-pool-prepared-statement-per-connection-size: -1
+      pool-prepared-statements: false
+      validation-query: SELECT 'x'
+      validation-query-timeout: 2
+      filters: stat,wall,slf4j
+      aop-patterns: com.tzcpa.service.question.impl.*
+      filter:
+        stat:
+          enabled: true
+          db-type: mysql
+          log-slow-sql: true
+          slow-sql-millis: 200
+        wall:
+          enabled: true
+          db-type: mysql
+          log-violation: true
+          throw-exception: true
+          config:
+            alter-table-allow: false
+            truncate-allow: false
+            drop-table-allow: true
+            update-where-none-check: true
+            metadata-allow: false
+        slf4j:
+          enabled: true
+          statement-log-enabled: false
+          connection-log-enabled: false
+          result-set-log-enabled: false
+          statement-executable-sql-log-enable: true
+      db-type: com.alibaba.druid.pool.DruidDataSource
+  jackson:
+    default-property-inclusion: ALWAYS
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/**,classpath:/public/
+#设置cglib代理模式，防止非接口代理出错
+  aop:
+    proxy-target-class: true
+
+
+
+web:
+  upload-path: D:/images/
+
+
