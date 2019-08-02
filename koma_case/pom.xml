@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.wtl</groupId>
-  <artifactId>koma</artifactId>
+  <artifactId>koma_case</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
@@ -89,6 +89,13 @@
 		<artifactId>lombok</artifactId>
 		<version>1.16.18</version><!--$NO-MVN-MAN-VER$-->
 		<scope>provided</scope>
+	</dependency>
+	
+	<!-- H2数据库 -->
+	<dependency>
+        <groupId>com.h2database</groupId>
+        <artifactId>h2</artifactId>
+        <scope>runtime</scope>
 	</dependency>
   
   </dependencies>
