@@ -14,3 +14,7 @@ logging:
 conf:
   value:
     machineCode: 1
+es:
+  host: 127.0.0.1
+  port: 9200
+  scheme: http
