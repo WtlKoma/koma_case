@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.112.132:3306/cboard?useUnicode=true&characterEncoding=utf8&serverTimezoneGMT%2B8&useSSL=true&rewriteBatchedStatements=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: koma1993
+  liquibase:
+    change-log: classpath:liquibase/changelog-master.xml
+    enabled: false

@@ -1,0 +1,23 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <changeSet author="Administrator (generated)" id="1645106952625-1" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <createTable tableName="account">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="username" remarks="用户名" type="VARCHAR(32)"/>
+            <column name="password" remarks="密码" type="VARCHAR(32)"/>
+            <column name="name" remarks="姓名" type="VARCHAR(20)"/>
+            <column name="sex" remarks="性别" type="CHAR(1)"/>
+            <column name="phone" remarks="手机" type="VARCHAR(100)"/>
+            <column name="email" remarks="邮件" type="VARCHAR(100)"/>
+            <column name="create_time" remarks="创建时间" type="datetime(6)"/>
+            <column name="update_time" remarks="修改时间" type="datetime(6)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Administrator (generated)" id="1645106952625-2" objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+        <update tableName="account" >
+            <column name="username"  remarks="用户名3" type="VARCHAR(24)"/>
+        </update>
+    </changeSet>
+</databaseChangeLog>

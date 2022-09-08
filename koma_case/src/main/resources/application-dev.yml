@@ -1,12 +1,3 @@
-server:
-  port: 8090
-  tomcat.max-threads: 30
-  tomcat.uri-encoding: UTF-8
-#  servlet:
-#    context-path: /ks
-
-
-
 debug: true
 
 #logging:

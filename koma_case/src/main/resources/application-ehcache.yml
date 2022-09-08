@@ -1,0 +1,5 @@
+spring:
+  cache:
+    ehcache:
+      # 如果不配置默认会直接找classpath下ehcache.xml
+      config: "classpath:ehcache/ehcache.xml"

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd"
+         maxBytesLocalHeap="500M">
+
+    <diskStore path="D:\workspaces\GitHub\koma_case\koma_case\ehcache" />
+    <defaultCache
+            eternal="true"
+            maxElementsInMemory="1000000"
+            overflowToDisk="false"
+            diskPersistent="true"
+            memoryStoreEvictionPolicy="LRU"/>
+    <!--ehcache 缓存-->
+    <!--ehcache 缓存不持久化-->
+    <cache name="dpf"
+           eternal="false"
+           overflowToDisk="false"
+           diskPersistent="false"
+           timeToIdleSeconds="0"
+           timeToLiveSeconds="12000"
+
+           memoryStoreEvictionPolicy="LRU"/>
+
+    <!--ehcache 持久化-->
+    <cache name="dpt" diskPersistent="true" />
+</ehcache>
