@@ -48,9 +48,7 @@ public class NRSAop {
 	
 	/**
 	 *  判断是否包含本用户的相同请求
-	 * @param args
-	 * @param className
-	 * @param methodName
+	 * @param key
 	 * @return
 	 */
 	private Boolean JudgeSUE(String key){
