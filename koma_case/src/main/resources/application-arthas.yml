@@ -1,0 +1,13 @@
+arthas:
+  app-name: koma_case
+  # telnet-port、http-port为-1，则不listen telnet端口，为 0 ，则随机telnet端口
+  #  # 如果是防止一个机器上启动多个 arthas端口冲突。可以配置为随机端口，或者配置为 -1，并且通过tunnel server来使用arthas。
+  #  # ~/logs/arthas/arthas.log (用户目录下面)里可以找到具体端口日志
+  telnet-port: -1
+  http-port: -1
+  # 127.0.0.1只能本地访问，0.0.0.0则可网络访问，但是存在安全问题
+  ip: 127.0.0.1
+  # 默认情况下，会生成随机ID，如果 arthas agent配置了 appName，则生成的agentId会带上appName的前缀。
+  # agent-id: hsehdfsfghhwertyfad
+  # tunnel-server地址
+  tunnel-server: ws://localhost:7777/ws

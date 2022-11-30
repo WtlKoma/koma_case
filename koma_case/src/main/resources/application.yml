@@ -1,5 +1,5 @@
 spring:
-   profiles.active: ehcache,liquibase
+   profiles.active: arthas,liquibase
 server:
   port: 8090
   tomcat.max-threads: 30
